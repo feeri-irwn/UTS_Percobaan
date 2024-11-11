@@ -9,6 +9,10 @@ app.register_blueprint(user_bp)
 app.register_blueprint(leave_request_bp)
 app.register_blueprint(attendance_history_bp)
 
+@app.route('/')
+def home():
+    return "hallo"
+
 db.create_all()
 if __name__ == '__main__':
     app.run(debug=True)

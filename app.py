@@ -13,7 +13,7 @@ db.create_all()
 
 @app.route('/')
 def home():
-    return "hallo"
+    return "Selamat datang :), Saya Feri Irawan 21.83.0619"
 
 if __name__ == '__main__':
     app.run(debug=True)
